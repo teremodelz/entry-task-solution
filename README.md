@@ -41,3 +41,13 @@ The application will start on `http://localhost:8080`.
 Liquibase will automatically create the required tables on startup.
 Due to lack of informations whether we should update the whole object or whether we update only few parameters i've decided to create PATCH endpoint instead of PUT which allows us 
 to update the whole object and only few things saving the rest of them like they were.
+
+## Endpoints 
+### Products
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /api/products | Get all products |
+| POST | /api/products | Create a product |
+| PATCH | /api/products/{id} | Update a product |
+| DELETE | /api/products/{id} | Delete a product |
